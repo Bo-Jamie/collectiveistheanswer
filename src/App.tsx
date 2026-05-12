@@ -564,7 +564,10 @@ const StageRevelation = () => {
               className="bg-beige pt-8 p-6 md:p-10 border-4 border-ink shadow-[6px_6px_0_#20668C] md:shadow-[12px_12px_0_#20668C] relative z-10"
             >
               {!submitted ? (
-                <form className="space-y-6 flex flex-col h-full" onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>
+                <form  className="space-y-6 flex flex-col h-full"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSfi5PkTF92oQmIXAt0SNVA7dwfhC90_z_cf0YccYEPFpScJVQ/formResponse"
+                        method="POST"
+                        target="_blank">
                   <div className="space-y-4">
                     <h2 className="text-xl md:text-2xl font-bold tracking-tighter uppercase">RECRUITMENT</h2>
                     
@@ -584,21 +587,37 @@ const StageRevelation = () => {
                   <div className="space-y-4 flex-grow">
                     <div className="space-y-1">
                       <label className="font-mono text-[9px] uppercase opacity-50">Full Identity</label>
-                      <input type="text" className="w-full brutalist-input !text-base md:!text-lg !p-2 md:!p-3" placeholder="NAME" required />
+                      <input  type="text"
+                              name="entry.964030483"
+                              className="w-full brutalist-input !text-base md:!text-lg !p-2 md:!p-3"
+                              placeholder="NAME"
+                              required/>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-1">
                         <label className="font-mono text-[9px] uppercase opacity-50">Division</label>
-                        <input type="text" className="w-full brutalist-input !text-base md:!text-lg !p-2 md:!p-3" placeholder="PROGRAM" required />
+                        <input  type="text"
+                                name="entry.208740380"
+                                className="w-full brutalist-input !text-base md:!text-lg !p-2 md:!p-3"
+                                placeholder="PROGRAM"
+                                required />
                       </div>
                       <div className="space-y-1">
                         <label className="font-mono text-[9px] uppercase opacity-50">Level</label>
-                        <input type="number" className="w-full brutalist-input !text-base md:!text-lg !p-2 md:!p-3" placeholder="YEAR" required />
+                        <input type="number"
+                                name="entry.97953475"
+                                className="w-full brutalist-input !text-base md:!text-lg !p-2 md:!p-3"
+                                placeholder="YEAR"
+                                required/>
                       </div>
                     </div>
                     <div className="space-y-1">
                       <label className="font-mono text-[9px] uppercase opacity-50">Contact String</label>
-                      <input type="text" className="w-full brutalist-input !text-base md:!text-lg !p-2 md:!p-3" placeholder="EMAIL / PHONE" required />
+                      <input type="text"
+                              name="entry.1735647804"
+                              className="w-full brutalist-input !text-base md:!text-lg !p-2 md:!p-3"
+                              placeholder="EMAIL / PHONE"
+                              required/>
                     </div>
                   </div>
 
