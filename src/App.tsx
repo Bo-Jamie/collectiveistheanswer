@@ -564,7 +564,7 @@ const StageRevelation = () => {
               className="bg-beige pt-8 p-6 md:p-10 border-4 border-ink shadow-[6px_6px_0_#20668C] md:shadow-[12px_12px_0_#20668C] relative z-10"
             >
              {!submitted ? (
-                    <>
+      
                       <iframe 
                         name="hidden_iframe" 
                         style={{ display: 'none' }} 
