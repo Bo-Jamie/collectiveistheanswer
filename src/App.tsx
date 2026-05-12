@@ -534,7 +534,7 @@ const StageRevelation = () => {
               <div className="space-y-4">
                 <h3 className="text-[10px] md:text-xs font-mono uppercase tracking-widest text-blue font-bold">[ MISSION_OVERVIEW ]</h3>
                 <p className="text-base md:text-lg leading-relaxed text-ink/80 font-light">
-                  The Collective is more than a name; it is a repository for human psychology and structural influence. What you perceived as puzzles were measurements of your cognitive elasticity. 
+                  The Collective is more than a name, it is a repository for human psychology and structural influence. What you perceived as puzzles were measurements of your cognitive elasticity. 
                 </p>
                 <div className="p-4 md:p-6 bg-beige-light border-4 border-ink shadow-[4px_4px_0_#20668C] md:shadow-[8px_8px_0_#20668C]">
                   <p className="text-xs md:text-sm font-mono leading-relaxed opacity-80 font-bold">
@@ -563,11 +563,22 @@ const StageRevelation = () => {
               transition={{ delay: 0.6 }}
               className="bg-beige pt-8 p-6 md:p-10 border-4 border-ink shadow-[6px_6px_0_#20668C] md:shadow-[12px_12px_0_#20668C] relative z-10"
             >
-              {!submitted ? (
-                <form  className="space-y-6 flex flex-col h-full"
+             {!submitted ? (
+                    <>
+                      <iframe 
+                        name="hidden_iframe" 
+                        style={{ display: 'none' }} 
+                      />
+                  
+                      <form
+                        className="space-y-6 flex flex-col h-full"
                         action="https://docs.google.com/forms/d/e/1FAIpQLSfi5PkTF92oQmIXAt0SNVA7dwfhC90_z_cf0YccYEPFpScJVQ/formResponse"
                         method="POST"
-                        target="_blank">
+                        target="hidden_iframe"
+                        onSubmit={() => {
+                          setSubmitted(true);
+                        }}
+                      >
                   <div className="space-y-4">
                     <h2 className="text-xl md:text-2xl font-bold tracking-tighter uppercase">RECRUITMENT</h2>
                     
