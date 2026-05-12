@@ -564,7 +564,7 @@ const StageRevelation = () => {
               className="bg-beige pt-8 p-6 md:p-10 border-4 border-ink shadow-[6px_6px_0_#20668C] md:shadow-[12px_12px_0_#20668C] relative z-10"
             >
              {!submitted ? (
-      
+                  <>
                       <iframe 
                         name="hidden_iframe" 
                         style={{ display: 'none' }} 
@@ -642,7 +642,8 @@ const StageRevelation = () => {
                     </span>
                   </MagneticButton>
                 </form>
-              ) : (
+                </>
+                ) : (
                 <div className="text-center py-12 space-y-4">
                   <div className="w-12 h-12 bg-blue rounded-full mx-auto flex items-center justify-center text-beige">
                     <Shield size={24} />
