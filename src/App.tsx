@@ -576,8 +576,14 @@ const StageRevelation = () => {
                         method="POST"
                         target="hidden_iframe"
                         onSubmit={() => {
-                          setSubmitted(true);
-                        }}
+
+  setTimeout(() => {
+
+    setSubmitted(true);
+
+  }, 1200);
+
+}}
                       >
                   <div className="space-y-4">
                     <h2 className="text-xl md:text-2xl font-bold tracking-tighter uppercase">RECRUITMENT</h2>
